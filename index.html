@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <script src="js/home.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <input type="checkbox" id="noscript-hide">
+    <div id="noscript">
+        <script>document.getElementById("noscript").style.display = "none"</script>
+        <div>
+            <section>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M109-120q-11 0-20-5.5T75-140q-5-9-5.5-19.5T75-180l370-640q6-10 15.5-15t19.5-5q10 0 19.5 5t15.5 15l370 640q6 10 5.5 20.5T885-140q-5 9-14 14.5t-20 5.5H109Zm371-120q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm0-120q17 0 28.5-11.5T520-400v-120q0-17-11.5-28.5T480-560q-17 0-28.5 11.5T440-520v120q0 17 11.5 28.5T480-360Z"/></svg>
+                <h2>No Javascript available</h2>
+            </section>
+            <section>
+                <p>Javascript is disabled or not supported. The website cannot be displayed properly.</p>	
+                <p>Under these circumstances you will not be able to interact properly with the website.</p>
+            </section>
+            <p>Please enable JavaScript to continue!</p>
+            <section>
+                <a href="https://www.google.com/search?q=how do I activate javascript" target="_blank">Enable JavaScript</a>
+                <label for="noscript-hide">Continue without</label>
+            </section>
+        </div>
+    </div>
+    <div class="page">
+        <nav>
+            <div class="background"></div>
+            <div>
+                <a class="logo" href="index.html">SommerpalaisGreiz</a>
+                <section aria-label="navigation">
+                    <a class="active" href="#">Home</a>
+                    <a href="en/history.html">History</a>
+                    <a href="en/events.html">Events</a>
+                    <a href="en/contact.html">Contact</a>
+                </section>
+                <section>
+                    <button id="themeToggle"></button>
+                    <button id="languageToggle" data-activelanguage="en" data-activesite="index">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#071b65"></rect><path d="M5.101,4h-.101c-1.981,0-3.615,1.444-3.933,3.334L26.899,28h.101c1.981,0,3.615-1.444,3.933-3.334L5.101,4Z" fill="#fff"></path><path d="M22.25,19h-2.5l9.934,7.947c.387-.353,.704-.777,.929-1.257l-8.363-6.691Z" fill="#b92932"></path><path d="M1.387,6.309l8.363,6.691h2.5L2.316,5.053c-.387,.353-.704,.777-.929,1.257Z" fill="#b92932"></path><path d="M5,28h.101L30.933,7.334c-.318-1.891-1.952-3.334-3.933-3.334h-.101L1.067,24.666c.318,1.891,1.952,3.334,3.933,3.334Z" fill="#fff"></path><rect x="13" y="4" width="6" height="24" fill="#fff"></rect><rect x="1" y="13" width="30" height="6" fill="#fff"></rect><rect x="14" y="4" width="4" height="24" fill="#b92932"></rect><rect x="14" y="1" width="4" height="30" transform="translate(32) rotate(90)" fill="#b92932"></rect><path d="M28.222,4.21l-9.222,7.376v1.414h.75l9.943-7.94c-.419-.384-.918-.671-1.471-.85Z" fill="#b92932"></path><path d="M2.328,26.957c.414,.374,.904,.656,1.447,.832l9.225-7.38v-1.408h-.75L2.328,26.957Z" fill="#b92932"></path><path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path><path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path></svg>
+                        <a id="noscript-languageToggle" href="de/start"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#cc2b1d" d="M1 11H31V21H1z"></path><path d="M5,4H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z"></path><path d="M5,20H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z" transform="rotate(180 16 24)" fill="#f8d147"></path><path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path><path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path></svg></a>
+                        <script>document.getElementById("noscript-languageToggle").style.display = "none"</script>
+                    </button>
+                </section>
+            </div>
+        </nav>
+        <main>
+            <div class="main-landing">
+                <div class="in">
+                    <section>
+                        <div><h1>Sommerpalais Greiz</h1></div>
+                        <div id="headline-animation">
+                            <p id="text1" class="in-place">History</p>
+                            <p id="text2" class="under-place">Events</p>
+                            <p id="text3" class="upper-place">Contact</p>
+                        </div>
+                        <p>Visit the Sommerpalais Greiz in the Princely City Park.</p>
+                    </section>
+                    <section>
+                        <a href="en/history.html">History</a>
+                        <a href="en/events.html">Events</a>
+                    </section>
+                </div>
+            </div>
+            <div class="img-slider">
+                <div>
+                    <section style="--position: 1">
+                        <img src="image/home_imgSlider/MG_4652.jpg" alt="">
+                    </section>
+                    <section style="--position: 2">
+                        <img src="image/home_imgSlider/MG_4124_final.jpg" alt="">
+                    </section>
+                    <section style="--position: 3">
+                        <img src="image/home_imgSlider/MG_4255_final.jpg" alt="">
+                    </section>
+                    <section style="--position: 4">
+                        <img src="image/home_imgSlider/MG_4490.jpg" alt="">
+                    </section>
+                    <section style="--position: 5">
+                        <img src="image/home_imgSlider/MG_4610.jpg" alt="">
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="background"></div>
+            <div class="footer">
+                <div class="logo-info">
+                    <a class="logo" href="index.html">SommerpalaisGreiz</a>
+                    <p>This website is <a href="https://github.com/Strahlemann-lab/school-website-projekt">open source</a></p>
+                    <p>© 2024 Strahlemann-lab</p>
+                </div>
+                <div class="about-info">
+                    <h3>About</h3>
+                    <a href="en/imprint.html">Imprint</a>
+                    <a href="en/privacy.html">Privacy Policy</a>
+                </div>
+                <div class="operator-info">
+                    <h3>Operator</h3>
+                    <p>This website is a school project.</p>
+                    <section><p>To the official website of </p><a href="http://www.sommerpalais-greiz.de/">the Sommerpalais Greiz</a></section>
+                </div>
+                <div class="warning-info">THIS IS NOT THE OFFICIAL WEBSITE OF THE SOMMERPALAIS GREIZ!</div>
+            </div>  
+        </footer>
+    </div>
+</body>
+</html>

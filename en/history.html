@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/history.css">
+</head>
+
+<body>
+    <input type="checkbox" id="noscript-hide">
+    <div id="noscript">
+        <script>document.getElementById("noscript").style.display = "none"</script>
+        <div>
+            <section>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M109-120q-11 0-20-5.5T75-140q-5-9-5.5-19.5T75-180l370-640q6-10 15.5-15t19.5-5q10 0 19.5 5t15.5 15l370 640q6 10 5.5 20.5T885-140q-5 9-14 14.5t-20 5.5H109Zm371-120q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm0-120q17 0 28.5-11.5T520-400v-120q0-17-11.5-28.5T480-560q-17 0-28.5 11.5T440-520v120q0 17 11.5 28.5T480-360Z"/></svg>
+                <h2>No Javascript available</h2>
+            </section>
+            <section>
+                <p>Javascript is disabled or not supported. The website cannot be displayed properly.</p>	
+                <p>Under these circumstances you will not be able to interact properly with the website.</p>
+            </section>
+            <p>Please enable JavaScript to continue!</p>
+            <section>
+                <a href="https://www.google.com/search?q=how do I activate javascript" target="_blank">Enable JavaScript</a>
+                <label for="noscript-hide">Continue without</label>
+            </section>
+        </div>
+    </div>
+    <div class="page">
+        <nav>
+            <div class="background"></div>
+            <div>
+                <a class="logo" href="../index.html">SommerpalaisGreiz</a>
+                <section aria-label="navigation">
+                    <a href="../index.html">Home</a>
+                    <a class="active" href="../en/history.html">History</a>
+                    <a href="../en/events.html">Events</a>
+                    <a href="../en/contact.html">Contact</a>
+                </section>
+                <section>
+                    <button id="themeToggle"></button>
+                    <button id="languageToggle" data-activelanguage="en" data-activesite="history">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#071b65"></rect><path d="M5.101,4h-.101c-1.981,0-3.615,1.444-3.933,3.334L26.899,28h.101c1.981,0,3.615-1.444,3.933-3.334L5.101,4Z" fill="#fff"></path><path d="M22.25,19h-2.5l9.934,7.947c.387-.353,.704-.777,.929-1.257l-8.363-6.691Z" fill="#b92932"></path><path d="M1.387,6.309l8.363,6.691h2.5L2.316,5.053c-.387,.353-.704,.777-.929,1.257Z" fill="#b92932"></path><path d="M5,28h.101L30.933,7.334c-.318-1.891-1.952-3.334-3.933-3.334h-.101L1.067,24.666c.318,1.891,1.952,3.334,3.933,3.334Z" fill="#fff"></path><rect x="13" y="4" width="6" height="24" fill="#fff"></rect><rect x="1" y="13" width="30" height="6" fill="#fff"></rect><rect x="14" y="4" width="4" height="24" fill="#b92932"></rect><rect x="14" y="1" width="4" height="30" transform="translate(32) rotate(90)" fill="#b92932"></rect><path d="M28.222,4.21l-9.222,7.376v1.414h.75l9.943-7.94c-.419-.384-.918-.671-1.471-.85Z" fill="#b92932"></path><path d="M2.328,26.957c.414,.374,.904,.656,1.447,.832l9.225-7.38v-1.408h-.75L2.328,26.957Z" fill="#b92932"></path><path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path><path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path></svg>
+                        <a id="noscript-languageToggle" href="de/start"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#cc2b1d" d="M1 11H31V21H1z"></path><path d="M5,4H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z"></path><path d="M5,20H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z" transform="rotate(180 16 24)" fill="#f8d147"></path><path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path><path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path></svg></a>
+                        <script>document.getElementById("noscript-languageToggle").style.display = "none"</script>
+                    </button>
+                </section>
+            </div>
+        </nav>
+        <main>
+            <div class="main-1">
+                <section>
+                    <img src="../image/history/MG_4192_final.jpg" alt="">
+                    <div>
+                        <h2>Time of origin</h2>
+                        <p>Only a few sources have survived from the time the Summer Palace was built. What is certain is that the remaining sculptural furnishings date from the late 1870s. A memorial plaque to the history of Greiz states on June 1, 1779: “The reigning Prince Heinrich XI. has the summer palace expanded and decorated with stucco work, wallpaper, etc..«</p>
+                        <p>Henry XI Reuss of the older line probably took his social rise - he was elevated to the status of imperial prince by Emperor Joseph II in 1778 - as an opportunity to change the interior of the existing castle and thus create the appropriate external framework that corresponded to the new dignity of the sovereign.</p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h2>Architectural style</h2>
+                        <p>The vault shapes and blind arches on the ground floor confirm that the building is not a new building from the 1880s. The construction dates back to 1768/69. In 1768, Henry XI inherited. Reuss took over the older Untergreiz line and had a new summer residence built. Plans and etchings show, that there was already a three-wing building in Greiz Park on the site of today's summer palace.</p>
+                        <p>The well-traveled prince, who was open to science and art, initially preferred a more conservative design for the new building, but for the renovation he opted for French models, thereby reflecting his personal preference for the internationally modern architecture of the time. This makes the Summer Palace an unusually early example of the reception of Louis XVI. and for early classicism in central Germany.</p>
+                    </div>
+                    <img src="../image/history/MG_4675.jpg" alt="">
+                </section>
+                <section>
+                    <img src="../image/history/MG_4490.jpg" alt="">
+                    <div>
+                        <p>The main facade faces south. The gable above the three-axis central projection bears the Rrussian coat of arms with the prince's crown and a banner underneath with the motto of the house: Maison de belle retraite.</p>
+                        <p>Three steps lead through the main portal into the garden hall. This former orangery was used for festivals, theater performances and concerts in the 18th and 19th centuries. Today the hall of the State Books and Engravings Collection serves as a space for exhibitions and concerts.</p>
+                        <p>The garden hall is 36 meters long and seven meters wide. Its ceiling is supported by two pillars. The stucco work - delicate reliefs in divided wall panels that alternately depict garden tools as well as theater props and musical instruments - dates from 1782/83. Opposite the portal there is a fireplace in whose hearth there is a cast iron plate with the Rrussian coat of arms with a closed crown and the year 1783.</p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h2>North side of the house</h2>
+                        <p>On the north side there are smaller rooms, including the Chinese room, the royal bedroom and the dining room, which is now used as a display library. The mezzanine floor, the former living quarters of the princely family, now houses the library, the reading room and the restoration workshop.</p>
+                        <p>The royal family left no furniture or other furnishings behind when they moved out of the summer palace. The current furnishings on the first floor consist largely of the first museum furnishings from the 1920s. Some parts were rebuilt in the early 1990s.</p>
+                    </div>
+                    <img src="../image/history/MG_4652.jpg" alt="">
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="background"></div>
+            <div class="footer">
+                <div class="logo-info">
+                    <a class="logo" href="../index.html">SommerpalaisGreiz</a>
+                    <p>This website is <a href="https://github.com/Strahlemann-lab/school-website-projekt">open source</a></p>
+                    <p>© 2024 Strahlemann-lab</p>
+                </div>
+                <div class="about-info">
+                    <h3>About</h3>
+                    <a href="../en/imprint.html">Imprint</a>
+                    <a href="../en/privacy.html">Privacy Policy</a>
+                </div>
+                <div class="operator-info">
+                    <h3>Operator</h3>
+                    <p>This website is a school project.</p>
+                    <section><p>To the official website of </p><a href="http://www.sommerpalais-greiz.de/">the Sommerpalais Greiz</a></section>
+                </div>
+                <div class="warning-info">THIS IS NOT THE OFFICIAL WEBSITE OF THE SOMMERPALAIS GREIZ!</div>
+            </div>  
+        </footer>
+    </div>
+</body>
+</html>
