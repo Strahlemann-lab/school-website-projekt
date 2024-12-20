@@ -1,0 +1,195 @@
+:root{
+    --font-standard: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    --color: #353535;
+    --color-contrast: #f1f1f1;
+    --background-color: #D9D9D9;
+    --background-color-warning: #dd8080b6;
+    --border-color-warning: #f81717;
+    --footer-height: 150px;
+    --activeSite-background-color: #6A994E;
+    --hover-color: #f5f5f5;
+    --color-link: #2d68d4;
+    --color-z-index2: #5e5e5e;
+    --site-content-width: min(100%, 1400px);
+    --home-landing-color: #d8d8d8;
+    --home-landing-color-z2: #adadad;
+    --events-box-background-color: #ffffffbd;
+}
+
+.main-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+    .in{
+        width: var(--site-content-width);
+        background-color: var(--color-contrast);
+        border: var(--color-z-index2) solid 1px;
+        border-radius: 15px;
+        padding: 1em;
+
+        h2{
+            margin-bottom: 1em;
+        }
+        .events-container{
+            display: grid;
+            gap: 1em;
+            grid-template-columns: repeat(2, minmax(350px, 1fr));
+            justify-content: center;
+            filter: saturate(0.8);
+            
+            
+            .event-box{
+                box-sizing: border-box;
+                height: 300px;
+                background-position: center;
+                background-size: cover;
+                border: 1px solid var(--color-z-index2);
+                border-radius: 8px;
+                position: relative;
+                overflow: hidden;
+                transition: filter 300ms ease-in-out;
+    
+                div:nth-of-type(1){
+                    position: absolute;
+                    width: 100%;
+                    height: 15%;
+                    background-color: var(--events-box-background-color);
+                    backdrop-filter: blur(3px);
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    h3{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
+                    h3:nth-child(1){
+                        padding-left: 0.5em;
+                    }
+                    h3:nth-child(2){
+                        padding-right: 0.5em;
+                        padding-left: 0.5em;
+                        border-radius: 8px 0 0 8px;
+                        color: var(--color-contrast);
+                        background-color: var(--activeSite-background-color);
+                    }
+                }
+                div:nth-of-type(2){
+                    position: absolute;
+                    box-sizing: border-box;
+                    bottom: -100%;
+                    background-color: var(--events-box-background-color);
+                    width: 100%;
+                    height: max-content;
+                    padding: 0.2em;
+                    color: var(--color-z-index2);
+                    transition:all 300ms ease-in-out;
+                    backdrop-filter: blur(3px);
+                }
+            }
+            .event-box:hover div:nth-of-type(2){
+                bottom: 0%;
+            }
+            .item-1{
+                background-image: url(../image/events/weihnachten_2.jpeg);
+            }
+            .item-2{
+                background-image: url(../image/events/buch.jpeg);
+            }
+            .item-3{
+                background-image: url(../image/events/ddr_kunst.jpeg);
+            }
+            .item-4{
+                background-image: url(../image/events/weihnachten.jpeg);
+            }
+        }
+        .events-container:hover .event-box{
+            filter: grayscale(1);
+        }
+        .events-container .event-box:hover{
+            filter: grayscale(0);
+        }
+    }
+    @media(max-width: 1050px){
+        .in .events-container{
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            
+        }
+    }
+}
+.main-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+
+    .in{
+        width: var(--site-content-width);
+        background-color: var(--color-contrast);
+        border: var(--color-z-index2) solid 1px;
+        border-radius: 15px;
+        padding: 1em;
+
+        h2{
+            margin-bottom: 1em;
+        }
+        .guided-box{
+            box-sizing: border-box;
+            height: 300px;
+            max-width: 600px;
+            background-position: center;
+            background-size: cover;
+            border: 1px solid var(--color-z-index2);
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            background-image: url(../image/events/tour.jpeg);
+
+            div:nth-of-type(1){
+                position: absolute;
+                width: 100%;
+                height: 15%;
+                background-color: var(--events-box-background-color);
+                backdrop-filter: blur(3px);
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h3{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                h3:nth-child(1){
+                    padding-left: 0.5em;
+                }
+                h3:nth-child(2){
+                    padding-right: 0.5em;
+                    padding-left: 0.5em;
+                    border-radius: 8px 0 0 8px;
+                    color: var(--color-contrast);
+                    background-color: var(--activeSite-background-color);
+                }
+            }
+            div:nth-of-type(2){
+                position: absolute;
+                box-sizing: border-box;
+                bottom: -100%;
+                background-color: var(--events-box-background-color);
+                width: 100%;
+                height: max-content;
+                padding: 0.2em;
+                color: var(--color-z-index2);
+                transition:all 300ms ease-in-out;
+                backdrop-filter: blur(3px);
+            }
+        }
+        .guided-box:hover div:nth-of-type(2){
+            bottom: 0%;
+        }
+    }
+}

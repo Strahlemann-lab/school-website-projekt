@@ -18,7 +18,7 @@
 
 /* <-- style for main on home/start --> */
 .main-landing{
-    background-image: url(../image/Greiz_2013-05_0754_Sommerpalais2.jpeg);
+    background-image: url(../image/greiz_sommerpalais2.jpeg);
     background-size: cover;
     background-position: center;
     scale: 1.015;
@@ -56,7 +56,7 @@
             }
             #headline-animation{
                 position: relative;
-    
+                mask-image: linear-gradient(0deg, rgb(0, 0, 0, 0) 2%, rgba(0,0,0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 98%);
                 height: 70px;
                 width: 184px;
                 overflow: hidden;
@@ -191,5 +191,33 @@
     }
     to{
         left: -500px;
+    }
+}
+
+@media(max-width: 750px) {
+    .main-landing .in{
+        
+
+        section:nth-of-type(1){
+            h1{
+                font-size: 2.5em;
+            }
+            #headline-animation{
+                p{
+                    font-weight: 600;
+                    font-size: 1.8em;
+                    position: absolute;
+                    transition: top 800ms ease-in-out;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: var(--home-landing-color);
+                }
+            }
+            p{
+                font-weight: 400;
+                font-size: 1em;
+                color: var(--home-landing-color-z2);
+            }
+        }
     }
 }

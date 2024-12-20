@@ -25,6 +25,7 @@ body[data-theme="dark"]{
     --color-link: #5277bb;
     --home-landing-color: #d8d8d8;
     --home-landing-color-z2: #adadad;
+    --events-box-background-color: #000000bd;
 }
 body[data-theme="light"]{
     --color: #353535;
@@ -36,6 +37,7 @@ body[data-theme="light"]{
     --color-link: #2d68d4;
     --home-landing-color: #d8d8d8;
     --home-landing-color-z2: #adadad;
+    --events-box-background-color: #ffffffbd;
 }
 
 /* deactivate standard browser stylesheets */
@@ -176,9 +178,10 @@ body{
             .logo{
                 justify-items: flex-start;
                 text-decoration: none;
-                color: var(--color);
+                color: var(--activeSite-background-color);
                 font-weight: 600;
                 font-size: 1.5em;
+                text-shadow: #0000006b 0px 0px 20px;
             }
 
             /* 'section1' holds the navigation links for the website */
@@ -306,10 +309,11 @@ body{
                 a{
                     justify-items: flex-start;
                     text-decoration: none;
-                    color: var(--color);
+                    color: var(--activeSite-background-color);
                     font-weight: 600;
                     font-size: 2em;
                     margin-bottom: 10px;
+                    text-shadow: #0000006b 0px 0px 20px;
                 }
                 p{
                     margin-bottom: 5px;
